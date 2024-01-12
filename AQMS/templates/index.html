@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQMS Prototype</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        nav {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+
+        .card {
+            width: 48%; /* Adjust as needed */
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>AQMS</div>
+        <div>
+            <div>Username</div>
+            <div>Settings</div>
+        </div>
+    </header>
+
+    <nav>
+        <!-- Add your navigation links here -->
+        <div>Dashboard</div>
+        <ul>
+            <li>Number 1</li>
+            <li>Number 2</li>
+            <li>Number 3</li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="card">
+            <div>Temperature:</div>
+            <div>{{ temperature }}</div>
+        </div>
+
+        <div class="card">
+            <div>Pressure:</div>
+            <div>{{ pressure }}</div>
+        </div>
+
+        <div class="card">
+            <div>Humidity:</div>
+            <div>{{ humidity }}</div>
+        </div>
+        <div class="card">
+            <div>Gas:</div>
+            <div>{{ gas }}</div>
+        </div>
+
+        <div class="card">
+            <div>Altitude:</div>
+            <div>{{ altitude }}</div>
+        </div>
+
+        <div class="card">
+            <div>TVOC:</div>
+            <div>{{ tvoc }}</div>
+        </div>
+
+        <div class="card">
+            <div>eCO2:</div>
+            <div>{{ eco2 }}</div>
+        </div>
+
+        <div class="card">
+            <div>Raw H2:</div>
+            <div>{{ raw_h2 }}</div>
+        </div>
+
+        <div class="card">
+            <div>Raw_Ethanol:</div>
+            <div>{{ raw_ethanol }}</div>
+        </div>
+        <!-- Add more cards for other parameters -->
+    </main>
+
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
+
+    <!-- Add any additional scripts or libraries here -->
+
+</body>
+</html>
